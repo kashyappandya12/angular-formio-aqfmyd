@@ -1,0 +1,27 @@
+/* Add application styles & imports to this file! */
+
+body {
+  padding-top: 20px;
+}
+
+#app formio {
+  font-size: 0.8em;
+}
+
+#app formio .control-label {
+  font-weight: bold;
+}
+
+#app pre {
+  font-size: 0.8 em;
+  padding: 15px;
+  background-color: #eee;
+  border-radius: 5px;
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
+#app > .card {
+  margin-top: 20px;
+  padding-top: 20px;
+}

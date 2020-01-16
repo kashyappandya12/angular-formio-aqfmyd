@@ -1,0 +1,18 @@
+<div class="card">
+  <div class="card-body">
+    <formio [form]="form" (change)="onChange($event)" (render)="onRendered()"></formio>
+    <pre *ngIf="rendered">{{data | json}}</pre>
+  </div>
+</div>
+
+<div *ngIf="rendered" class="card">
+	<div class="card-body">
+    <h1>Custom Form Example</h1>
+    <p>You may also use a formio form object instead of a form's URL (more information <a href="https://github.com/formio/angular-formio/wiki/Form-Renderer" target="_blank">here</a>).</p>
+    <formio [form]="customForm" (submit)="onSubmit($event)"></formio>
+    <pre>{{ customForm | json }}</pre>
+  </div>
+</div>
+
+
+
